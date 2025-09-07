@@ -6,7 +6,7 @@ import { ShopeeCrawler } from './lib/crawlers/ShopeeCrawler';
 async function main () {
   const opt: PuppeteerLaunchOptions = {
     // devtools: true,
-    '--no-sandbox'
+    args: ['--no-sandbox'],
   };
 
   const crawlers: BaseCrawler[] = [
