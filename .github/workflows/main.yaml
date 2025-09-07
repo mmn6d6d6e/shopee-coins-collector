@@ -34,7 +34,7 @@ jobs:
 
       - name: Cache cookie
         id: cache-cookie
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: cookie-${{ steps.hash_usr.outputs.digest }}-${{github.run_id}}
           restore-keys: |
